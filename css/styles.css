@@ -1,0 +1,146 @@
+:root{
+  --primary: #ff97f5;
+  --secondary: #743080;
+  --terciary: #ff4a80;
+  --hover: #743080;
+  background-color: var(--primary);
+  font-family: "roboto mono", monospace;
+  margin: 4vmin;
+  font-size: 18px;
+}
+html{
+  scroll-behavior: smooth;
+}
+a, #navbar a{
+  color: var(--terciary);
+}
+a:hover, #navbar a:hover{
+  color: var(--secondary);
+}
+img{
+  width: 100%;
+  grid-column: 2/4;
+  grid-row: 2/2;
+  
+}
+
+#welcome-section{
+  color: var(--secondary);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+#about-me{
+  background-color: white;
+  padding:8vmin;
+}
+.project-tile{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 8vmin;
+  background-color: white;
+  margin-bottom: 4vmin;
+}
+
+
+.footer-links{
+ color: var(--primary);
+ padding: 1.5vmin;
+  
+ 
+}
+.project-description{
+  grid-column: 1/1;
+}
+
+.div-links{
+  grid-column: 1/1;
+
+  
+}
+#links{ /* footer */
+  background-color: var(--secondary);
+  position: absolute;
+  height: 50vh;
+  margin-top: 10vh;
+  display: flex;
+  align-items: baseline;
+  left: 0;
+  right: 0;
+}
+#footer-links{
+  width: 75vw;
+  padding-top: 5vh;
+  margin-top: 10vh;
+  margin-left: 10%;
+  border-top-style: solid;
+  border-width: 2px;
+  border-color: var(--terciary);
+  }
+button{
+   background-color: transparent;
+  border: none;
+   font-size: 1.2em;
+  align-self: last baseline;
+    width: 8vmin;
+    height: 8vmin;
+ 
+}
+button:hover, #menu-button:hover{
+opacity: 60%;
+  
+}
+#exit-button:hover{
+  background-color: var(--primary);
+  
+}
+  #menu-button{
+    display: inline-block !important;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: var(--terciary);
+    
+  }
+  #navbar{
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    position: fixed;
+    background-color: white;
+    right: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    overflow-x: hidden;
+    transition: 0.5s;
+   
+  }
+
+#exit-button{
+  
+}
+  .navbar{
+    color: var(--secondary);
+    font-size: 1em;
+    margin-left: 5%;
+    margin-top: 5%;
+    background-color: none;
+  }
+@media screen and (max-width:768px){
+  
+  .project-tile{
+    padding: 0vmin;
+  }
+  .project-description, .project-links, h1{
+    margin: 4vmin;
+  }
+  img{
+  width: 100%;
+  grid-column: 1/1;
+  grid-row: 4/4;
+    margin: 1em 0 auto 0 ;
+  
+  min-width: 378px;
+}
+}
