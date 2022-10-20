@@ -127,7 +127,7 @@ opacity: 60%;
     margin-top: 5%;
     background-color: none;
   }
-@media screen and (max-width:768px){
+/*@media screen and (max-width:768px){
   
   .project-tile{
     padding: 0vmin;
@@ -143,4 +143,4 @@ opacity: 60%;
   
   min-width: 378px;
 }
-}
+}*/
