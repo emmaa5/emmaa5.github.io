@@ -1,8 +1,11 @@
-:root{
+body{
   --primary: #ff97f5;
   --secondary: #743080;
   --terciary: #ff4a80;
   --hover: #743080;
+   min-width: 250px;
+  max-width: 960px;
+margin: auto;
   background-color: var(--primary);
   font-family: "roboto mono", monospace;
   margin: 4vmin;
@@ -51,6 +54,7 @@ img{
 }
 .project-description{
   grid-column: 1/1;
+ 
 }
 
 .div-links{
@@ -61,8 +65,8 @@ img{
 #links{ /* footer */
   background-color: var(--secondary);
   position: absolute;
-  height: 50vh;
-  margin-top: 10vh;
+  height: 50vw;
+  margin-top: 10vw;
   display: flex;
   align-items: baseline;
   left: 0;
@@ -70,8 +74,8 @@ img{
 }
 #footer-links{
   width: 75vw;
-  padding-top: 5vh;
-  margin-top: 10vh;
+  padding-top: 5vw;
+  margin-top: 10vw;
   margin-left: 10%;
   border-top-style: solid;
   border-width: 2px;
@@ -127,8 +131,13 @@ opacity: 60%;
     margin-top: 5%;
     background-color: none;
   }
-/*@media screen and (max-width:768px){
+@media screen and (max-width:768px){
   
+  #menu-button{
+    padding: 40px;
+    padding-top: 8px;
+    padding-left: 15px;
+  }
   .project-tile{
     padding: 0vmin;
   }
@@ -143,4 +152,4 @@ opacity: 60%;
   
   min-width: 378px;
 }
-}*/
+}
